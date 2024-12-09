@@ -74,5 +74,3 @@ ab.parest$Parameter <- c("Delta (/d)", "A0 (log10 U/mL)", "Additive error","Beta
 ab.parest$`Estimate (95%CI)` <- pe$est
 ab.parest$`IIV (%CV)` <- pe$`BSV(CV% or SD)`
 write.csv(ab.parest, "antibody_dynamic_model_parameter_table.csv", row.names = FALSE)
-# Legend
-ab.legend <- "Parameter estimates for the antibody dynamic model. " 
