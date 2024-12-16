@@ -20,10 +20,6 @@ vl.dat$mol_dich_on <- vl.dat$mol_dich_on * vl.dat$drug_eff
 # 2. Allometric effect for age
 vl.dat$log_age_cov <- log(vl.dat$age_y / median(vl.dat$age_y))
 # 3. Allometric effect for antibody
-vl.dat$bl_antibody[vl.dat$bl_antibody ==  "sample analysis failed"] <- -999
-vl.dat$bl_antibody <- as.numeric(vl.dat$bl_antibody )
-vl.dat$bl_antibody[vl.dat$bl_antibody == -999] <- median(vl.dat$bl_antibody,na.rm = T)
-vl.dat$bl_antibody <- as.numeric(vl.dat$bl_antibody )
 vl.dat$log_ab_cov <- log(vl.dat$bl_antibody / median(vl.dat$bl_antibody,na.rm = T))
 # 4. Allometric effect for time since symptom onset
 vl.dat$t_symp_day <- vl.dat$t_symp_enrol + 1 

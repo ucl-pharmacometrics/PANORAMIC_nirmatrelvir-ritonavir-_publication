@@ -404,14 +404,10 @@ days</td>
 </tr>
 <tr class="even">
 <td align="left">dv</td>
-<td align="left">nlmixr2 reserved term - dependent variable,</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">is Log10 vl with cens=1 set to loq and log10 antispike
-antibody - see dvid</td>
+<td align="left">nlmixr2 reserved term - dependent variable, is Log10 vl
+with cens=1 set to loq rather than loq/2 and antispike antibody - see
+dvid</td>
 <td align="left">numeric</td>
-<td align="left"></td>
 </tr>
 <tr class="even">
 <td align="left">cens</td>
@@ -464,12 +460,12 @@ doses</td>
 </tr>
 <tr class="odd">
 <td align="left">crp</td>
-<td align="left">CRP as covariate with values carried forward</td>
+<td align="left">CRP as covariate with values carried forward, missing imputed to median for day</td>
 <td align="left">numeric</td>
 </tr>
 <tr class="even">
 <td align="left">s_antibody</td>
-<td align="left">s-antibody level</td>
+<td align="left">s-antibody as covariate, missing imputed to median for day</td>
 <td align="left">numeric</td>
 </tr>
 <tr class="odd">
@@ -486,12 +482,12 @@ antibodies measured</td>
 </tr>
 <tr class="odd">
 <td align="left">bl_virus</td>
-<td align="left">baseline log10 viral load</td>
+<td align="left">baseline log10 viral load, missing (n=15) imputed to median</td>
 <td align="left">numeric</td>
 </tr>
 <tr class="even">
 <td align="left">bl_antibody</td>
-<td align="left">baseline log10 s-antibody</td>
+<td align="left">baseline s-antibody, missing (n=39) imputed to median</td>
 <td align="left">numeric</td>
 </tr>
 <tr class="odd">
